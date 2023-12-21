@@ -6,8 +6,6 @@ services:
       context: .
       dockerfile: ./infra/bankana/Dockerfile
     container_name: bankana
-    environment:
-      - NODE_ENV=development
     ports:
       - '3000:3000'
     volumes:
