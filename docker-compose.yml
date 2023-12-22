@@ -1,13 +1,12 @@
 version: '3.8'
 
 services:
-  bankana:
-    build:
-      context: .
-      dockerfile: ./infra/bankana/Dockerfile
-    container_name: bankana
-    ports:
-      - '3000:3000'
-    volumes:
-      - .:/app
-      - /app/node_modules
+    bankana:
+        build:
+            context: .
+            dockerfile: ./infra/bankana/Dockerfile
+        container_name: bankana
+        ports:
+            - '3000:3000'
+        volumes:
+            - .:/app
