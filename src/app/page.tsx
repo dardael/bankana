@@ -1,5 +1,9 @@
-import Image from 'next/image';
-
+import File from 'bankana/components/file.tsx';
 export default function Home() {
-    return <div>Hello world </div>;
+    return (
+        <File
+            placeholder="Déposer le relevé de compte à analyser ici"
+            fileType=".csv"
+        />
+    );
 }
